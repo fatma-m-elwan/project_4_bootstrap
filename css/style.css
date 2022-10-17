@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body {
+    background-color: #f0e7eb !important;
+    /* width: 100vw; */
+}
+button:not(.carousel button)  {
+    border: 1px solid white !important;
+}
+button:not(.modal-header button , .carousel button):hover {
+    background: #821774 !important ;
+}
+a {
+    color: white !important;
+}
+/* start header */
+nav {
+    background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: .8;
+}
+.navbar-brand:hover {
+    text-shadow: 10px 10px 25px white, -10px -10px 25px white ;
+}
+.dropdown-menu a {
+    text-shadow: 1px 1px 1px #ad5389;
+}
+.modal-header h5 {
+    color: #3c1053;
+    margin-top: 10px;
+}
+.modal-header button {
+    /* font-size: 41px; */
+    /* font-weight: normal; */
+}
+.modal-footer button:hover, .ffff:hover {
+    background: #821774 !important;
+}
+
+   /* custom switch */
+   .form-check-input:focus~.form-check-label::before {
+    border-color: #821774 !important;
+    box-shadow: 0 0 0 0.2rem #821774 !important;
+  }
+  
+  .form-check-input:checked~.form-check-label::before {
+    border-color: #821774 !important;
+    background-color: #821774 !important;
+  }
+  
+  .form-check-input:active~.form-check-label::before {
+    background-color: #821774 !important;
+    border-color: #821774 !important;
+  }
+  
+  .form-check-input:focus:not(:checked)~.form-check-label::before {
+    border-color: #821774 !important;
+  }
+  
+  .form-check-input-green:not(:disabled):active~.form-check-label::before {
+    background-color: #821774 !important;
+    border-color: #821774 !important;
+  }
+  /* End header  */
+  /* start Carousel  */
+  .carousel-item img {
+     width: 100%;
+     height: calc(100vh - 61px) ;
+  }
+  .carousel-item button {
+    background: #ad5389;
+  }
+  .carousel-item button:hover {
+    background-color: #821774 !important;
+  }
+  /* End Carousel  */
+  /* start card */
+  
+.cards a {
+    background-color: #ad5389 !important;
+}
+.cards a:hover {
+    color: white !important;
+    background: #821774 !important ;
+}
+  /* End card */
+  /* start collapse */
+.drop {
+color: #3c1053 !important;
+background-color: #f8f9fa !important;
+margin: -6px;
+/* margin-left: -10px; */
+margin-right: -10px;
+}
+.drop:hover {
+    background-color: #dcd3d8 !important;  
+}
+.cardhover:hover {
+background-color: #dcd3d8 !important;
+}
+.cardhover {
+    border-bottom: 0 !important;
+}
+  /* End collapse */
+  /*  start card code  1  */
+code {
+    font-size: 18px !important;
+    color: #3c1053 !important;
+}
+pre {
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+}
+.ffff {
+    position: relative;
+    left: 20px;
+}
+.ffff::before {
+   position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style:solid;
+    border-color: transparent transparent #dcd3d8 transparent;
+    top: 26px;
+    left: 18px;
+    display: none;
+}
+.ffff::after {
+    position: absolute;
+    content: " ";
+    height: 44px;
+    width: 80px;
+    background-color: #dcd3d8;
+    top: 46px;
+    left: -12px;
+    border-radius: 5px;
+    display: none;
+}  
+   .ffff:active::before,
+   .btn:hover::before{
+    display: block;
+}
+.ffff:hover::after{
+    content: "copy to clipboard";
+    color: #3c1053;
+    font-size: 14px;
+    display: block;
+}
+.ffff:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+  /*  End card code  1  */
+/* start fixed img */
+.fixed1 {
+    background-image: url(../images/pro/k.jpg) !important;
+}
+.fixed {
+    background-size: cover;
+    height: 250px;
+    background-attachment: fixed;
+}
+/* End fixed img */
+/* start good basic */
+.btnhover {
+    background-color: #ad5389 !important;
+}
+/* End good basic */
+/* start fixed img */
+.fixed2 {
+    background-image: url(../images/IMG_3778.JPG);
+}
+/* End fixed img */
+/* start Join Us  */
+ i  {
+    color: #821774 !important;
+    font-size: 26px;
+}
+  i:hover {
+    color: #3c1053 !important;
+}
+.aaa , .card h6 ,  .footh {
+    color: #821774 !important;
+}
+.aaa:hover {
+    color: #3c1053 !important;
+}    
+/* End Join Us  */
+/* start footer */
+/* .n {
+    border-width: 2px 0 ;
+    border-style: solid;
+    border-color: #821774;
+} */
+/* .c {
+    display: block !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: red;
+} */
+/* End footer */
+
+
+
